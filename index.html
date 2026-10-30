@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- infos invisibles : titre de l'onglet, encodage, etc. -->
+    <title>Mon Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,800;1,800&family=Barlow+Condensed:ital,wght@0,700;1,700&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- tout ce qui est visible sur la page -->
+    <div class="container">
+      <header>
+        <div class="barre">
+          <div class="marque">
+            <span class="icone-logo">{S}</span>
+            <p class="logo">Sunchained</p>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#" class="menu-actif">Accueil</a></li>
+              <li><a href="#projets">Projets</a></li>
+              <li><a href="#apropos">À propos</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="badge"><span class="voyant"></span>En formation</div>
+        </div>
+        <div class="hero">
+          <div class="hero-texte">
+            <h1>
+              Je code <span class="balise neon">&lt;/&gt;</span><br /><span
+                class="geant accent neon"
+                >des univers</span
+              ><br /><span class="grand">numériques</span>
+            </h1>
+            <p class="slogan">
+              Code propre. Design moderne.<br /><span class="accent neon"
+                >100% fait main.</span
+              >
+            </p>
+          </div>
+          <div class="hero-fenetres">
+            <div class="fenetre">
+              <div class="fenetre-barre">
+                <span class="pastille rouge"></span>
+                <span class="pastille jaune"></span>
+                <span class="pastille vert"></span>
+                <span class="adresse">projet-1</span>
+              </div>
+              <div class="fenetre-contenu">
+                <img
+                  class="vitrine-image"
+                  src="images/projet-1-bientot.svg"
+                  alt="boutique en ligne en construction"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="apropos">
+        <p>
+          Tout ce qui touche à la création m'attire. Aujourd'hui, je l'exprime à
+          travers le code : j'apprends le développement web fullstack, de
+          l'interface jusqu'au serveur.
+        </p>
+        <p>
+          Chaque ligne de ce site est écrite à la main, et je compte bien garder
+          cette exigence dans chaque projet.
+        </p>
+      </main>
+      <section id="projets">
+        <h2>
+          <span class="balise neon">&lt;/&gt;</span> Mes
+          <span class="accent neon">projets</span>
+          <span class="balise neon">&lt;/&gt;</span>
+        </h2>
+        <div class="projets">
+          <div class="carte">
+            <h3>Boutique en ligne</h3>
+            <p>Bientôt en ligne</p>
+          </div>
+          <div class="carte">
+            <h3>Portfolio</h3>
+          </div>
+          <div class="carte">
+            <h3>À venir</h3>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Travaillons ensemble</h2>
+        <form action="">
+          <label for="nom">Ton nom</label>
+          <input type="text" id="nom" name="nom" required />
+          <label for="email">Ton e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="jean@exemple.fr"
+            required
+          />
+          <label for="message">Ton message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+      <footer>
+        <a href="mailto:sunchainedstudios@outlook.com">Me contacter</a>
+      </footer>
+    </div>
+  </body>
+</html>
