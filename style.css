@@ -18,6 +18,7 @@ body {
   background-color: var(--fond);
   color: var(--texte);
   padding: 20px 40px;
+  margin: 0;
 }
 
 h1 {
@@ -119,16 +120,6 @@ footer {
   margin-top: 30px;
 }
 
-@media (max-width: 600px) {
-  .projets {
-    flex-direction: column;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-  }
-}
-
 .carte:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
@@ -186,6 +177,7 @@ nav a {
   text-decoration: none;
   color: var(--texte-secondaire);
   font-family: "JetBrains Mono", monospace;
+  white-space: nowrap;
 }
 
 .menu-actif {
@@ -193,6 +185,7 @@ nav a {
   border: 1px solid var(--accent);
   border-radius: 999px;
   padding: 4px 12px;
+  gap: 16px;
 }
 
 .barre {
@@ -200,6 +193,8 @@ nav a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 nav {
@@ -330,4 +325,47 @@ button {
   border-radius: 999px;
   padding: 12px;
   border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .projets {
+    flex-direction: column;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .geant {
+    font-size: 56px;
+  }
+
+  .grand {
+    font-size: 48px;
+  }
+
+  body {
+    padding: 20px 16px;
+  }
+
+  nav {
+    padding: 8px 10px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .barre {
+    justify-content: center;
+  }
 }
