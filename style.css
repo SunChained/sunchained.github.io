@@ -99,6 +99,8 @@ section {
 .hero-fenetres {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  position: relative;
 }
 
 .projets {
@@ -289,6 +291,24 @@ nav {
   min-height: 200px;
 }
 
+.fenetre-terminal {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  position: absolute;
+  top: 150px;
+  left: -40px;
+  width: 220px;
+}
+
+.fenetre-terminal .fenetre-contenu {
+  min-height: 0;
+  padding: 14px;
+}
+
+.terminal-commande {
+  color: var(--texte);
+}
+
 .vitrine-image {
   width: 100%;
   height: auto;
@@ -328,13 +348,25 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 1250px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .fenetre-terminal {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-fenetres {
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 600px) {
   .projets {
     flex-direction: column;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
   }
 
   h1 {
