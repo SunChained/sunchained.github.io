@@ -63,6 +63,46 @@ h1 {
   letter-spacing: 1px;
 }
 
+.hero-intro {
+  font-size: 18px;
+  max-width: 480px;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+.hero-boutons {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.bouton {
+  transition: 0.2s;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+}
+
+.bouton-plein {
+  background-color: var(--accent);
+  color: var(--fond);
+}
+
+.bouton-contour {
+  color: var(--texte);
+}
+
+.bouton-plein:hover {
+  box-shadow: 0 0 20px rgba(255, 107, 26, 0.5);
+}
+
+.bouton-contour:hover {
+  background-color: rgba(255, 107, 26, 0.1);
+}
+
 .logo {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 28px;
