@@ -295,14 +295,20 @@ nav {
   font-family: "JetBrains Mono", monospace;
   font-size: 12px;
   position: absolute;
-  top: 150px;
-  left: -180px;
+  top: 190px;
+  left: -160px;
   width: 200px;
+  transform: rotate(-2deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 .fenetre-terminal .fenetre-contenu {
-  min-height: 0;
+  min-height: 160px;
   padding: 14px;
+}
+
+.fenetre-terminal p {
+  margin: 4px 0;
 }
 
 .terminal-commande {
@@ -362,7 +368,11 @@ button {
   .fenetre-terminal {
     position: static;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
+  }
+
+  .fenetre-terminal .fenetre-contenu {
+    min-height: 130px;
   }
 
   .hero-fenetres {
