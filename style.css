@@ -401,6 +401,10 @@ button {
     padding: 20px 16px;
   }
 
+  .fenetre {
+    transform: none;
+  }
+
   nav {
     padding: 8px 10px;
   }
